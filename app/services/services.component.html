@@ -1,0 +1,15 @@
+<ul>
+    <li *ngFor="let m of message">{{m}}</li>
+</ul>
+
+
+<ul>
+    <li *ngFor="let p of posts">
+        <p> {{p.body}} </p>
+    </li>
+</ul>
+
+
+
+
+<button (click)="addMessage()"> add message </button>

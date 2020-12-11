@@ -1,0 +1,38 @@
+
+
+<!--<form [formGroup]="myform" (ngSubmit)="getFormValues()"  >
+
+    <label>login <span *ngIf="myform.value.input1 == '' "  style="color: red;">*</span>  </label><br/>
+    <input  type="text" name="input1" formControlName="input1"   placeholder="please type something"  ><br/>
+
+    <label>email <span *ngIf="myform.value.input2 == '' "  style="color: red;">*</span></label><br/>
+    <input  type="email" name="input2" formControlName="input2"   placeholder="please type something"  ><br/>
+    <p *ngIf="  ! checkifemail(myform.value.input2)  " style="color: red;">feild email is required</p>
+    
+
+    <div formGroupName="location" >
+
+        <label>address  <span *ngIf="myform.value.location.address == '' "  style="color: red;">*</span>  </label><br/>
+        <input  type="text" name="address" formControlName="address"   placeholder="please type something"  ><br/>
+
+        
+        <label>code postal   </label><br/>
+        <input  type="text" name="codepostal" formControlName="codepostal"   placeholder="please type something"  ><br/>
+
+        
+        <label>ville  </label><br/>
+        <input  type="text" name="ville" formControlName="ville"   placeholder="please type something"  ><br/>
+    
+
+
+    </div>
+
+
+
+
+    <button type="submit" [disabled]=" ! myform.valid  " > VIEW DATA </button>
+</form> 
+-->
+
+
+<input type="text" [(ngModel)]="inputVal" > <button class="btn btn-primary" (click)="checkInputVal()">CHECK</button>
